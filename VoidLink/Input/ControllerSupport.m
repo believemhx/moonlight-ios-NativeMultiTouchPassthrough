@@ -1389,7 +1389,7 @@ static const double MOUSE_SPEED_DIVISOR = 1.25;
             [self updateFinished:self->_oscController];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)),
                            dispatch_get_main_queue(), ^{
-                [self->_delegate automaticallyStartSendingBuiltinGyroEvents]; // this will discontine any control events sent to the remote side for a instant. anyway it works out as signature describes
+                // [self->_delegate automaticallyStartSendingBuiltinGyroEvents]; // this will discontine any control events sent to the remote side for a instant. anyway it works out as signature describes
             });
         });
     }
